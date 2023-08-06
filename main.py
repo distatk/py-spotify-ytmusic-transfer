@@ -5,7 +5,7 @@ songs_per_query = 20
 
 sptfy.create_spotify_client()
 
-i = 45
+i = 0
 while True: 
     music_name_list = sptfy.get_saved_tracks(limit=songs_per_query, offset=i * songs_per_query)
     print('music_name_list', music_name_list)
